@@ -1,0 +1,56 @@
+### index
+GET https://tommy-callback.herokuapp.com
+
+### success
+POST https://tommy-callback.herokuapp.com/success
+Content-Type: application/json
+
+{
+  "key": "1"
+}
+
+### fail
+POST https://tommy-callback.herokuapp.com/fail
+Content-Type: application/json
+
+{
+  "key": "1"
+}
+
+
+###
+### deposit
+POST https://tommy-callback.herokuapp.com/signature
+Content-Type: application/json
+
+{
+  "key": "13653cb1-1cf5-4c43-b123-611dd8f720d7",
+  "contentType": "application/json; charset=utf-8",
+  "keyId": "bc4d3b07-e8b4-4ed0-97f8-7fc188b7b12e",
+  "body": "{\"deviceType\":\"WEB\",\"identity\": \"depositTommyTest0000000001\"}"
+}
+
+###
+### withdraw
+POST https://tommy-callback.herokuapp.com/signature
+Content-Type: application/json
+
+{
+  "key": "13653cb1-1cf5-4c43-b123-611dd8f720d7",
+  "contentType": "application/json; charset=utf-8",
+  "keyId": "bc4d3b07-e8b4-4ed0-97f8-7fc188b7b12e",
+  "body": "{\"referenceId\":\"tommyWithdrawal27894995179400\",\"deviceType\":\"WEB\",\"bankCode\":\"ICBC\",\"bankBranch\":\"北京北京\",\"cardHolderName\":\"湯米\",\"cardNumber\":\"012345678901234567\",\"amount\":100.00}"
+}
+
+###
+###
+###
+###
+###
+###
+###
+
+
+
+
+
