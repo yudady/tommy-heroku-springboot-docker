@@ -1,3 +1,22 @@
+# need fix R10 ERROR
+```shell
+2022-04-06T08:27:04.535510+00:00 app[web.1]: 2022-04-06 08:27:04.535  INFO 3 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2022-04-06T08:27:04.592832+00:00 app[web.1]: 2022-04-06 08:27:04.592  INFO 3 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-06T08:27:04.592960+00:00 app[web.1]: 2022-04-06 08:27:04.592  INFO 3 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1309 ms
+2022-04-06T08:27:05.144862+00:00 app[web.1]: 2022-04-06 08:27:05.144  INFO 3 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-06T08:27:05.160692+00:00 app[web.1]: 2022-04-06 08:27:05.160  INFO 3 --- [           main] com.tommy.App                            : Started App in 2.641 seconds (JVM running for 3.175)
+2022-04-06T08:29:31.291954+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 150 seconds of launch
+2022-04-06T08:29:31.379274+00:00 heroku[web.1]: Stopping process with SIGKILL
+2022-04-06T08:29:31.546416+00:00 heroku[web.1]: Process exited with status 137
+2022-04-06T08:29:31.612494+00:00 heroku[web.1]: State changed from starting to crashed
+```
+
+
+===============================
+
+
+
+
 # callback response
 
 ## success
