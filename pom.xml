@@ -41,7 +41,44 @@
 	</distributionManagement>
 
 
+	<developers>
+		<developer>
+			<name>Manjunath Prabhakar</name>
+			<email>yudady@gmail.com</email>
+			<organization>com.github.yudady</organization>
+			<organizationUrl>https://github.com/yudady/tommy-heroku-springboot-docker</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/yudady/tommy-heroku-springboot-docker.git</connection>
+		<developerConnection>scm:git:https://github.com/yudady/tommy-heroku-springboot-docker.git
+		</developerConnection>
+		<url>https://github.com/yudady/tommy-heroku-springboot-docker</url>
+		<tag>github-example-package</tag>
+	</scm>
+
     <build>
+		<pluginManagement>
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-plugin-plugin</artifactId>
+					<version>3.6.0</version>
+					<configuration>
+						<!-- see http://jira.codehaus.org/browse/MNG-5346 -->
+						<skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.9.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
