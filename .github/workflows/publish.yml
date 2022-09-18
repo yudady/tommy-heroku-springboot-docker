@@ -24,7 +24,7 @@ jobs:
         - name: Create GitHub Release
           uses: actions/create-release@v1
           env:
-            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           with:
             tag_name: v${{github.run_number}}
             release_name: Release V${{github.run_number}}
@@ -32,10 +32,10 @@ jobs:
         - name: Update version
           run: mvn -B versions:set -DnewVersion=v${{github.run_number}} -DgenerateBackupPoms=false
 
-#        - name: Publish to GitHub Packages Apache Maven
-#          run: mvn -B deploy -DskipTests --file pom.xml
-#          env:
-#            GITHUB_TOKEN: ${{ github.token }}
+        - name: Publish to GitHub Packages Apache Maven
+          run: mvn -B deploy -DskipTests --file pom.xml
+          env:
+            GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
 
 
