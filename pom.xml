@@ -8,11 +8,13 @@
         <version>2.5.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>io.github.yudady</groupId>
     <artifactId>tommy-heroku-springboot-docker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>callback</name>
     <description>tommy-heroku-springboot-docker</description>
+
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
@@ -43,17 +45,16 @@
 
 	<developers>
 		<developer>
-			<name>Manjunath Prabhakar</name>
+			<name>tommy-heroku-springboot-docker</name>
 			<email>yudady@gmail.com</email>
-			<organization>com.github.yudady</organization>
+			<organization>io.github.yudady</organization>
 			<organizationUrl>https://github.com/yudady/tommy-heroku-springboot-docker</organizationUrl>
 		</developer>
 	</developers>
 
 	<scm>
 		<connection>scm:git:git://github.com/yudady/tommy-heroku-springboot-docker.git</connection>
-		<developerConnection>scm:git:https://github.com/yudady/tommy-heroku-springboot-docker.git
-		</developerConnection>
+		<developerConnection>scm:git:https://github.com/yudady/tommy-heroku-springboot-docker.git</developerConnection>
 		<url>https://github.com/yudady/tommy-heroku-springboot-docker</url>
 		<tag>github-example-package</tag>
 	</scm>
