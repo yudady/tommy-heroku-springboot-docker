@@ -174,3 +174,43 @@ jobs:
 
 
 ```
+
+
+###
+pom.xml
+
+```xml
+	<repositories>
+		<repository>
+			<id>github</id>
+			<!-- https://raw.github.com/使用者名稱/倉庫名/分支名 -->
+			<url>https://maven.pkg.github.com/yudady/tommy-heroku-springboot-docker</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>io.github.yudady</groupId>
+			<artifactId>tommy-heroku-springboot-docker</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+```
+
+~/.m2/settings.xml
+
+```xml
+<servers>
+        <server>
+            <id>github</id>
+            <username>yudady</username>
+            <password>ghp_XXXXXXXXXXXXXXXXXXXXXX</password>
+        </server>
+  </servers>
+```
+
